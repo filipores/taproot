@@ -5,10 +5,12 @@ const test = require('node:test');
 
 const root = path.join(__dirname, '..');
 
-test('taproot skill has valid frontmatter', () => {
-  const body = fs.readFileSync(path.join(root, 'skills', 'taproot', 'SKILL.md'), 'utf8');
-  assert.match(body, /^---\nname: taproot\n/);
-  assert.match(body, /description:/);
+test('taproot skills have valid frontmatter', () => {
+  for (const skill of ['taproot', 'taproot-loop']) {
+    const body = fs.readFileSync(path.join(root, 'skills', skill, 'SKILL.md'), 'utf8');
+    assert.match(body, new RegExp(`^---\\nname: ${skill}\\n`));
+    assert.match(body, /description:/);
+  }
 });
 
 test('taproot instructions include all root laws', () => {
@@ -26,6 +28,12 @@ test('taproot instructions include all root laws', () => {
   ]) {
     assert.match(text, new RegExp(phrase));
   }
+});
+
+test('taproot-loop defines loop stop criteria', () => {
+  const body = fs.readFileSync(path.join(root, 'skills', 'taproot-loop', 'SKILL.md'), 'utf8');
+  assert.match(body, /first wrong state/);
+  assert.match(body, /failing-before regression/);
 });
 
 test('logo is an svg', () => {

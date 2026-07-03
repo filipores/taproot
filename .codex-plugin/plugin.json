@@ -21,6 +21,7 @@
     "websiteURL": "https://github.com/filipores/taproot",
     "defaultPrompt": [
       "Use Taproot mode for this bug fix.",
+      "Run taproot-loop on this diff.",
       "Find the first wrong state before patching.",
       "Review this diff for symptom patches and test overfitting."
     ],

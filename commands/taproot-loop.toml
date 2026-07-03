@@ -1,0 +1,2 @@
+description = "Run Taproot root-cause review/fix/review loop"
+prompt = "Run taproot-loop on the current diff. Review for symptom patches, missing first-wrong-state evidence, wrong invariant owners, copied guards, broad catches, silent fallbacks, fixture overfitting, weakened tests, and missing failing-before regressions. Apply only the smallest safe accepted fixes, validate, and review again until clean, stopped, or capped. Ask before emergency symptom patches, broad refactors, or uncertain root-cause decisions."

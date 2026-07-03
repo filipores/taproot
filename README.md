@@ -63,6 +63,7 @@ Block means **not this patch**, not **never fix it**.
 | Command | What it does |
 |---|---|
 | `/taproot [on | off | status]` | Set/report Taproot mode. |
+| `/taproot-loop` | Review → fix → review until root-cause blockers are gone. |
 | `/skill:taproot` | Load the Taproot skill directly. |
 
 ## Break-glass quickfix
