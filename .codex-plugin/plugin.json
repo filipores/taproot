@@ -1,0 +1,30 @@
+{
+  "name": "taproot",
+  "version": "0.1.0",
+  "description": "Root-cause guard mode for AI bug fixes. Blocks symptom patches and test overfitting.",
+  "author": {
+    "name": "filipores",
+    "url": "https://github.com/filipores"
+  },
+  "homepage": "https://github.com/filipores/taproot",
+  "repository": "https://github.com/filipores/taproot",
+  "license": "MIT",
+  "keywords": ["debugging", "root-cause", "agentic-coding", "bugfix", "code-review"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Taproot",
+    "shortDescription": "Root-cause guard for bug fixes",
+    "longDescription": "Forces agents to reproduce, trace the first wrong state, fix at the invariant owner, and leave a regression guard instead of quickfixing symptoms.",
+    "developerName": "filipores",
+    "category": "Productivity",
+    "capabilities": ["Instructions", "Lifecycle hooks"],
+    "websiteURL": "https://github.com/filipores/taproot",
+    "defaultPrompt": [
+      "Use Taproot mode for this bug fix.",
+      "Find the first wrong state before patching.",
+      "Review this diff for symptom patches and test overfitting."
+    ],
+    "brandColor": "#111111",
+    "logo": "./assets/logo.svg"
+  }
+}

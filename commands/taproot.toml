@@ -1,0 +1,2 @@
+description = "Set or report Taproot root-cause guard mode (on/off/status)"
+prompt = "Switch to taproot {{args}} mode. If no argument is specified, turn taproot on. Taproot asks: what broke first? For non-trivial bug fixes, require evidence or repro, trace the earliest wrong state, fix at the invariant owner, grep callers before shared edits, and leave a regression that fails before and passes after. Block symptom patches, fixture overfitting, broad catches, silent fallbacks, copied guards, and weakened tests."

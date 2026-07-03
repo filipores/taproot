@@ -1,0 +1,8 @@
+{
+  "name": "taproot",
+  "version": "0.1.0",
+  "description": "Root-cause guard mode for AI bug fixes. What broke first?",
+  "homepage": "https://github.com/filipores/taproot",
+  "repository": "https://github.com/filipores/taproot",
+  "license": "MIT"
+}

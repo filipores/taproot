@@ -1,0 +1,14 @@
+{
+  "name": "taproot",
+  "version": "0.1.0",
+  "description": "Root-cause guard mode for AI bug fixes. What broke first?",
+  "keywords": ["pi-package", "pi", "skills", "debugging", "root-cause", "agentic-coding", "bugfix"],
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/*.test.js && npm test --prefix pi-extension"
+  },
+  "pi": {
+    "extensions": ["./pi-extension/index.js"],
+    "skills": ["./skills"]
+  }
+}

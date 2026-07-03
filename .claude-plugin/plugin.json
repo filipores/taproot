@@ -1,0 +1,9 @@
+{
+  "name": "taproot",
+  "version": "0.1.0",
+  "description": "Root-cause guard mode for AI bug fixes. Blocks symptom patches and test overfitting.",
+  "author": {
+    "name": "filipores",
+    "url": "https://github.com/filipores"
+  }
+}

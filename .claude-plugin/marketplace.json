@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "taproot",
+  "description": "Root-cause guard mode for AI bug fixes. What broke first?",
+  "owner": {
+    "name": "filipores",
+    "url": "https://github.com/filipores"
+  },
+  "plugins": [
+    {
+      "name": "taproot",
+      "description": "Blocks quickfix symptom patches by forcing reproduce, first-wrong-state tracing, owner fixes, and failing-before regressions.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
